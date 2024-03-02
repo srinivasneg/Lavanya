@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('https://storage.googleapis.com/nov-test/cloud.jfif'); /* Background image */
+            background-size: cover; /* Cover the entire background */
+            background-repeat: no-repeat; /* Prevent background image from repeating */
+            padding: 20px; /* Add some padding */
+            color: white; /* Set text color to white for better contrast */
+            position: relative; /* Set position relative to align the recent image */
+        }
+        .slideshow-container {
+            max-width: 400px; /* Set maximum width for the slideshow container */
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px; /* Rounded corners for the slideshow container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+        .mySlides img {
+            width: 100%; /* Ensure the image fits within its container */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .mySlides {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.5); /* White background with transparency for the slides */
+            opacity: 0; /* Initially hide the image */
+            transition: opacity 2s ease; /* Fade effect transition */
+        }
+        .mySlides.visible {
+            opacity: 1; /* Show the image when the visible class is added */
+        }
+		.bottom-image {
+        width: 80%; /* Adjust this value to decrease the size as desired */
+        height: auto; /* This will maintain the aspect ratio */
+    }
+    </style>
+</head>
+<body>
+    <h1>Here is Your Perfect Match</h1>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="https://storage.googleapis.com/nov-test/negilove.jpg" alt="Perfect Match">
+        </div>
+        <!-- Add more slides here if needed -->
+    </div>
+    <script>
+        // Function to show the image after a delay
+        function showImage() {
+            var image = document.querySelector('.mySlides');
+            image.classList.add('visible'); // Add the visible class to show the image
+        }
+
+        // Call the showImage function after a delay (e.g., 0.5 seconds)
+        setTimeout(showImage, 500); // Show the image after 0.5 seconds
+    </script>
+    <p><img class="bottom-image" src="https://storage.googleapis.com/nov-test/bchbd.jpg" alt="I love you Baddu">
+</body>
+</html>

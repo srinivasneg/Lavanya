@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundali Match</title>
+    <style>
+        body {
+            background-color: #f8d7da; /* Light pink background */
+            font-family: Arial, sans-serif;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            min-height: 100vh; /* Ensure body covers entire viewport height */
+            display: flex;
+            flex-direction: column; /* Align children in column layout */
+        }
+        h2 {
+            text-align: center;
+            color: #721c24; /* Dark pink text */
+            margin-top: 20px; /* Add space above heading */
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px auto;
+            max-width: 800px;
+            flex-grow: 1; /* Allow container to grow to fill available space */
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 45%;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .submit-button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #dc3545; /* Red submit button */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none; /* Remove default underline */
+            display: block; /* Make it block-level element for full-width appearance */
+            text-align: center; /* Center the text */
+        }
+        .submit-button:hover {
+            background-color: #c82333; /* Darker red on hover */
+        }
+        footer {
+            background-color: #343a40; /* Dark background color */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto; /* Push footer to bottom */
+        }
+    </style>
+</head>
+<body>
+    <h2>Kundali Match</h2>
+    <div class="container">
+        <div class="section">
+            <h3>Boy Section</h3>
+            <form id="boyForm">
+                <label for="boyName">Name:</label><br>
+                <input type="text" id="boyName" name="boyName"><br>
+                <label for="boyAge">Age:</label><br>
+                <input type="text" id="boyAge" name="boyAge"><br>
+                <label for="boyDOB">Date of Birth:</label><br>
+                <input type="text" id="boyDOB" name="boyDOB"><br>
+                <label for="boyBirthPlace">Place of Birth:</label><br>
+                <input type="text" id="boyBirthPlace" name="boyBirthPlace"><br>
+                <label for="boyBirthTime">Time of Birth:</label><br>
+                <input type="text" id="boyBirthTime" name="boyBirthTime"><br>
+            </form>
+        </div>
+        <div class="section">
+            <h3>Girl Section</h3>
+            <form id="girlForm">
+                <label for="girlName">Name:</label><br>
+                <input type="text" id="girlName" name="girlName"><br>
+                <label for="girlAge">Age:</label><br>
+                <input type="text" id="girlAge" name="girlAge"><br>
+                <label for="girlDOB">Date of Birth:</label><br>
+                <input type="text" id="girlDOB" name="girlDOB"><br>
+                <label for="girlBirthPlace">Place of Birth:</label><br>
+                <input type="text" id="girlBirthPlace" name="girlBirthPlace"><br>
+                <label for="girlBirthTime">Time of Birth:</label><br>
+                <input type="text" id="girlBirthTime" name="girlBirthTime"><br>
+            </form>
+        </div>
+    </div>
+    <a href="https://storage.googleapis.com/nov-test/redirect.html" class="submit-button">Submit</a>
+    <footer>© 2024 Kundali Match</footer>
+</body>
+</html>
